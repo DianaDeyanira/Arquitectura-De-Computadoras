@@ -1,0 +1,102 @@
+*{
+	font-family:  'Special Elite', cursive;
+}
+body{
+		background-image:linear-gradient(#8B1228,#FFFFFF,#808080);
+		background-attachment: fixed;   
+
+}
+
+.head{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulos1{
+	background-color: #8b1228;
+		border: 1px solid white;
+	width:900px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+.titulos1 h3{
+	margin: 0px;
+margin-top:10px;
+	font-size: 30px;
+}
+.logo{
+position: absolute;
+left: 0px;
+		height: 110px;
+}
+.tecNM{
+	right: 20px;
+	position: absolute;
+		height: 110px;
+}
+.contenido1{
+	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.contenido{
+	left:20px;
+	top: 90px;
+position: relative;
+	width: 850px;
+		background-color: greenyellow;
+	border: 2px solid wheat;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+	font-size: 25px;
+}
+.menu{
+	position:relative;
+	top: 90px;
+	width: 320px;
+	margin: 0px;
+		background-color: greenyellow;
+	overflow: hidden;
+	}
+.menu li{
+	background-color: gray;
+	height: 50px;
+	list-style: none;
+	border-radius: 20px;
+	outline-color: firebrick;
+margin-top: 9px;
+}
+.menu li:hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.menu a{
+				color: white;
+	font-size: 20px;
+		text-decoration:none;
+	
+}
+.menu li{
+	position: relative;
+	left: 50px;
+	margin-top: 30px;
+	height:60px;
+	width: 220px;
+	border-radius: 40px;
+	background-color: #073756;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	transition: 1s;
+	
+}
+.alu{
+	float: left;
+}
+h1,h2,h3{
+		margin: 50px;
+	text-align: center;
+}

@@ -1,0 +1,99 @@
+body{
+font-family: 'Special Elite', cursive;
+		background-image:linear-gradient(#8B1228,#FFFFFF, #808080);
+background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+p{
+	font-size: 25px;
+}
+.head{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulos1{
+	background-color: #8b1228;
+		border: 1px solid white;
+	width:900px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+.titulos1 h3{
+	margin: 0px;
+margin-top:10px;
+	font-size: 30px;
+}
+.contenido{
+	left: 20px;
+	top: 90px;
+position: relative;
+	width: 1150;
+		background-color: greenyellow;
+	border: 2px solid wheat;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+}
+.texto{
+	background-image:linear-gradient(top,rgba(77,152,184,0.25),#fff 40em);
+	border: 2px solid wheat;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+	width: 880px;
+	font-size: 15px;
+	color: black;
+}
+.logo{
+		height: 110px;
+		margin-left:0px;
+}
+.tecNM{
+		height: 110px;
+}
+h1, h2{
+	font-size: 50px;
+	text-align: center;
+	margin: 10px;
+}
+
+
+.chipset{
+float: right;
+}
+
+.menu{
+position: absolute;
+	left: 820px;
+	width: 320px;
+	margin: 0px;
+	top: 90px;
+
+}
+.menu li{
+	padding-top: 30px;
+		font-size: 25px;
+	background-color: gray;
+	height: 60px;
+		width: 220px;
+	list-style: none;
+	outline-color: firebrick;
+margin-top: 20px;
+	position: relative;
+	left: 50px;
+	border-radius: 40px;
+	background-color: #073756;
+	font-family:  'Special Elite', cursive;
+	text-align: center;
+	transition: 1s;
+}
+.menu li:hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.menu a{
+				color: white;
+		text-decoration:none;
+}
+

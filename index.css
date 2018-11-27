@@ -1,0 +1,101 @@
+body{
+font-family: 'Special Elite', cursive;
+	padding: 0px;
+	margin-left:  auto;
+	margin-right: auto;
+	background-image:linear-gradient(#808080,#8B1228,#FFFFFF);
+}
+.head{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulos1{
+	background-color: #8b1228;
+		border: 1px solid white;
+	width:900px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+.titulos1 h3{
+	margin: 0px;
+margin-top:10px;
+	font-size: 30px;
+}
+.logo{
+		margin: 0px;
+	position: absolute;
+		height: 110px;
+}
+.tecNM{
+	margin: 0px;
+	right: 20px;
+	position: absolute;
+		height: 110px;
+}
+
+.accordion a{
+	text-decoration: none;
+}
+.content1{  
+	position: relative;
+	left: 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+	border-radius: 90px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.content {
+	font-size: 25px;
+	height: 900px;
+	width: 900px;
+position: relative;
+	right: 280px;
+	margin-top: 90px;
+	color: black;
+	background-color: greenyellow;
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+}
+
+
+.menu{
+	position: relative;
+	left: 920px;
+	margin-top: 90px;
+	width: 250px;
+	height: 900px;
+	transition: 1s;
+	background-color: greenyellow;
+
+}
+
+.accordion {
+margin-left: 30px;
+	margin-top: 30px;
+	height:60px;
+	width: 200px;
+	border-radius: 40px;
+	background-color: #073756;
+	font-family:  'Special Elite', cursive;
+	font-size: 30px;
+	transition: 1s;
+	
+}
+.accordion a{
+	color:white;
+}
+.accordion:hover{
+	transform: scale(1.1);
+	box-shadow: 2px 2px 2px #000;
+	z-index: 2px;
+	}
+.content p{
+	padding: 40px;
+}

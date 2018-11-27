@@ -1,0 +1,133 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<link rel="stylesheet" href="u1.css" meta charset="utf-8">
+			<link rel="icon" type="text/css" href="../TecNM.png"meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" >
+	<title> UNIDAD 1 </title>
+	</head>
+<body>
+			<div class="head">
+					<div>	<img class="logo" src="its.png" height="150px"> 	</div>	
+					<div class="titulos1">
+				<h3>Modelos de arquitectura de computo <br><br> Unidad 1</h3>
+		</div>
+		<div><img class="tecNM" src="TecNM.png" >	</div>
+	
+	</div>
+	
+	<div class="contenido">
+		<div class="menu">
+		<ul>
+			<li class="inicio"><a href="../Arquitectura_De_Computadoras.html">Inicio</a></li>
+			<li><a href="#pipe"> Segmentadas <br> pipe-line</a></li>
+			<li> <a href="#multi">Multiprocesamiento</a></li>
+			<li><a href=#analisis>Analisis de Componentes</a></li>
+			<li><a href="#buses">Buses</a></li>
+			<li><a href="#memorias">Memorias</a></li>
+			<li><a href="#jerarquia">Jerarquia de buses</a></li>
+			</ul>
+				</div>
+		<div class="texto">
+	<div class="clasic"><h1> Clásicos</h1>
+	<p>Tal que un PC (Personal Computer) debe procesar datos, transformando la información recibida, de igual forma tiene que almacenar datos, como resultado final de estas. También debe de realizar transferencia de datos entre su entorno y el mismo. La arquitectura de un computador hace referencia a la organización de sus elementos en módulos con una funcionabilidad definida y a la iteración entre ellos. En el esquema de la Figura 1.1 se muestra la estructura básica de Von Neumann que debe llevar una computadora para su correcta operación.
+		</p></div>
+	<div id="pipe">
+		<div class="pipe"> <h1> Segmentadas pipe-line</h1> 
+		<p>Pipeline (Tuberias ) es un término que pertenece a la ingeniería de software  y consiste en una cadena de elementos de procesamiento ordenados de tal manera que la salida de cada elemento es la entrada del siguiente elemento  con almacenamiento temporal de datos o buffering entre todos  los procesos.
+</p>
+<img src ="pipe.jpg" width="400px" height="400px">
+	</div>
+<div class="div2">
+	<h3> Aplicaciones de pipelines en informática</h3>
+	<p> Pipelines gráficos  se encuentran en la mayoría de las tarjetas graficadoras y consiste en múltiples unidades aritméticas o CPUs completas  que implementan variados escenarios de operaciones típicas, por ejemplo cálculos de luz y colores  renderizado proyección de perspectiva entre otros.
+ En software o tuberías  consiste en varios  procesos ordenados de tal forma que el flujo de salida de un proceso alimenta la entrada del siguiente proceso. Como por ejemplo, los pipelines de Unix.
+</p>
+	
+	<h3>Características de pipeline</h3>
+	<p> Se puede hablar de niveles de paralelismo caracterizados de la siguiente manera:
+Multiprogramación y Multiprocesamiento.- Estas acciones se toman a nivel de Programa o Trabajo.
+ Tarea o Procedimientos.- Acciones que se toman dentro de un mismo programa ejecutándose procesos independientes en forma simultánea.
+Interinstrucciones.- Acciones a nivel de instrucción o sea  dentro de mismo proceso o tarea se pueden ejecutar instrucciones independientes en forma simultánea.
+</p>
+	</div>
+		</div>
+		<div class="div3" id="multi"><div class="multiprocesamiento">
+	<h1> Multiprocesamiento</h1>
+	<p>Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten un mismo sistema de memoria.
+		Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un único espacio de direcciones para todos los procesadores y los mecanismos de comunicación se basan en el paso de mensajes desde el punto de vista del programador.
+
+Dado que los multiprocesadores comparten diferentes módulos de memoria, pudiendo acceder a un mismo módulo varios procesadores, a los multiprocesadores también se les llama sistemas de memoria compartida
+</p></div>
+<div class="multiproesamiento" ><img src="memoriaCompartida.jpg" width="300px" height="300px">
+</div>	
+	</div>
+	<div class="div2" id="analisis">
+ <h1>Analisis de los componentes	</h1>
+	<h3>CPU</h3>
+	
+	<p>Es la parte central de toda computadora ya que es la que cumple la tarea de procesamiento de todas las funciones así como también de almacenamiento de la información. Es un circuito electrónico que ha existido desde siempre en las computadoras sin importar su modelo y es por eso que es considerado uno de los elementos básicos de cualquier computador.
+ </p> 
+	<h3>Características</h3>
+	<ul>
+	<li>Habilidad para realizar operaciones aritméticas y lógicas. 
+		Memoria. </li>
+	<li>	Puede retener información por un periodo de tiempo dado.</li> 
+ <li>Es programable. Efectúa una serie de operaciones en un orden determinado. </li>
+ <li>Capacidad de recibir información del mundo exterior y entregar resultados de sus cálculos. </li>
+	</ul>
+		<h3>¿Como Funciona?</h3>
+<p>Leer la información: juntar información o instrucciones sobre una operación.
+Decodificar la información: dividir esa información en partes entendibles y significativas para la CPU.
+Ejecutar la información: el momento más importante ya que en él se lleva a cabo la instrucción y se ponen a trabajar varias partes juntas de la CPU.
+Mandar la información de vuelta: para dejar establecidos los resultados de la tarea realizada.
+		</p>
+			</div>
+		
+		<div id="memorias">
+	<div class="memorias">
+		<div class="m1"><h1>Memorias</h1>
+	<h3>Manejo de memorias</h3>
+	<p>Parte del computador que almacena la información: instrucciones y datos. Es conjunto de posiciones de memoria</p></div>
+</div>
+		<div class="memorias"> 
+			<div class="m3">	
+<h3>Memoria principal</h3>
+	<p>Es la memoria de la computadora donde se almacenan temporalmente tanto los datos como los programas que la unidad central de procesamiento (CPU) está procesando o va a procesar en un determinado momento. Por su función, la MP debe ser inseparable del microprocesador o CPU, con quien se comunica a través del bus de datos y el bus de direcciones. El ancho del bus determina la capacidad que posea el microprocesador para el direccionamiento de direcciones en memoria. 
+			</p></div>
+		<div class="m2"><img src="memoria.jpg"  width="400px" height="300px"></div>
+	</div>
+		<div class="memorias">
+			<div class="m4"><img src="meoria%20cache.png" width="400px" height="400px"></div>
+	<div class="m5"> <h3>Memoria Cache</h3><p>Es un tipo de memoria volátil (como la memoria RAM), pero muy rápida. Su función es almacenar instrucciones y datos a los que el procesador debe acceder continuamente. ¿Cuál es su finalidad? Pues que este tipo de datos sean de acceso instantáneo para el procesador, ya que se trata de información relevante y que debe estar a la mano de manera muy fluida. Los sistemas de hardware y software llamados caché, almacenan este tipo de datos de manera duplicada y por esta razón su acceso es tan veloz.</p></div>
+			</div>
+	
+	<div id="buses"><h1>Buses</h1>
+	<p>Un bus puede conectar lógicamente varios periféricos sobre el mismo conjunto de cables. Aplicada a la informática, se relaciona con la idea de las transferencias internas de datos que se dan en un sistema computacional en funcionamiento. 
+</p>
+	<h2>Tipos de buses</h2>
+	<p>Existen dos tipos primordiales de buses por el método de envío de la información: bus paralelo o serial. Hay diferencias en el desempeño y hasta hace unos años se consideraba que el uso apropiado dependía de la longitud física de la conexión: para cortas distancias el bus paralelo, para largas el serial.
+</p>
+		<div class="memorias">
+		<div class="paralelo" >
+	<h3>Bus Paraelo</h3>
+	<p>Es un bus en el cual los datos son enviados por bytes al mismo tiempo, con la ayuda de varias líneas que tienen funciones fijas. La cantidad de datos enviada es bastante grande con una frecuencia moderada y es igual al ancho de los datos por la frecuencia de funcionamiento. </p>
+		<img src="busParalelo.jpg"></div>	
+			<div>
+	<h3>Bus en Serie</h3>
+	<p>En este los datos son enviados, bit a bit y se reconstruyen por medio de registros o rutinas de software. Está formado por pocos conductores y su ancho de banda depende de la frecuencia.
+</p> 	<img src="busSerie.jpg"></div>
+			</div>
+			</div>
+		</div>
+	
+<div id="jerarquia">
+	<h1>Jerarquía de buses</h1>
+	<p>El computador tiene diferentes tipos de buses. Los computadores modernos tienen por lo menos 4 buses diferentes. Se les considera una jerarquía porque cada bus se conecta al nivel superior a él dentro del computador integrando así todas las partes del computador. Cada uno es generalmente más lento que el que se encuentra sobre él (siendo el bus del procesador el más rápido tratándose de que este es el dispositivo más rápido del computador)
+</p>
+	<img src="JerarquiaBuses.jpg">
+			</div>
+	</div>
+				</div>
+	</body>
+</html>

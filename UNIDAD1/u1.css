@@ -1,0 +1,132 @@
+body{
+		color: #5e5e5e;
+	background-image:linear-gradient(#808080,#8B1228,#FFFFFF);
+	background-attachment: fixed;   
+	font-family: 'Special Elite', cursive;
+
+}
+.head{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulos1{
+	background-color: #8b1228;
+		border: 1px solid white;
+	width:900px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+.titulos1 h3{
+	margin: 0px;
+margin-top:10px;
+	font-size: 30px;
+}
+.logo{
+		height: 110px;
+padding: 0px;
+}
+.tecNM{
+	
+		height: 100px;
+}
+.menu{
+position: absolute;
+	left: 820px;
+	width: 320px;
+	margin: 0px;
+	top: 90px;
+
+}
+.menu li{
+	background-color: gray;
+	height: 50px;
+	list-style: none;
+	border-radius: 20px;
+	outline-color: firebrick;
+margin-top: 9px;
+}
+.menu li:hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.menu a{
+				color: white;
+	font-size: 20px;
+		text-decoration:none;
+	
+}
+.menu li{
+	position: relative;
+	left: 50px;
+	margin-top: 30px;
+	height:60px;
+	width: 220px;
+	border-radius: 40px;
+	background-color: #073756;
+	font-family:  'Special Elite', cursive;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	transition: 1s;
+	
+}
+.contenido{
+	left: 20px;
+	top: 90px;
+position: relative;
+	width: 1150;
+		background-color: greenyellow;
+	border: 2px solid wheat;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+}
+.texto{
+	background-image:linear-gradient(top,rgba(77,152,184,0.25),#fff 40em);
+	border: 2px solid wheat;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,.9);
+	width: 880px;
+	font-size: 15px;
+	color: black;
+}
+
+.contenido h1, h2{
+	text-align: center;
+	font-size:50px;
+	color:black;
+}
+
+.contenido h3{
+	color:black;
+	font-size:  20px;
+}
+ul li{
+		font-size:20px;
+}
+.contenido img{
+border:3px solid #073756;
+}
+p{
+	font-size:  20px;
+}
+.pipe img{
+	float: left;
+	width: 400px;
+	height: 300px;
+	
+}
+.div3{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.memorias{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.inicio a{
+	font-size: 50px;
+}
+

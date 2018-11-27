@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+			<link rel="icon" type="text/css" href="../TecNM.png"meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+		<link rel=stylesheet href="u2.css" meta charset="utf-8">
+	<title> Estructura y funcionamiendo de CPU</title>
+	</head>
+	<body>
+		
+		<div class="head">
+					<div>	<img class="logo" src="../its.png" height="150px"> 	</div>	
+					<div class="titulos1">
+				<h3>Estructura y funcionamiento de CPU <br><br> Unidad 2</h3>
+		</div>
+			<div><img class="tecNM" src="../TecNM.png" >	</div></div>
+		
+	<div class="contenido1">
+	
+		<div class="contenido">
+		<h2 id="org">Organización del procesador</h2>
+		<p>La Unidad de Procesamiento (CPU) controla el funcionamiento del computador y lleva a cabo sus funciones de procesamiento de datos. Frecuentemente se le llama procesador. Un procesador, incluye tanto registros visibles por el usuario como registros de control/estado. Los registros visibles por el usuario pueden ser de uso general o tener una utilidad especial, mientras que los registros de control y estado se usan para controlar el funcionamiento del procesador, un claro ejemplo es el contador de programa.
+</p>
+		<i>		Lleva a cabo una gran variedad de:</i>
+			<ul>
+		<li>Cálculos</li>
+		<li>Comparaciones numéricas</li>
+<li>Transferencias de datos como respuesta a las peticiones de los programas que están siendo ejecutados en memoria.</li>
+				</ul>
+<p>CPU controla las operaciones básicas del ordenador enviando y recibiendo señales de control, direcciones de memoria y datos de un lugar a otro de la computadora a través de un grupo de canales llamados BUS.</p>
+<br> <i>La Unidad Central de Proceso está constituida internamente por:</i>	
+<ul><li> La Unidad de Control</li>
+<li>Unidad Aritmético-Lógica</li></ul>
+
+		
+		<h3 id="alu">Unidad Aritmético-Lógica (ALU)</h3>
+		<p>Recibe los datos sobre los que efectúa operaciones de cálculo y comparaciones. Toma decisiones lógicas (determina si una afirmación es correcta o falsa mediante reglas del algebra de Boole) y devuelve luego el resultado. Todo ello bajo supervisión de la unidad de control.
+			
+</p>
+		<img class ="alu" src="alu.png">
+	<h3>La Unidad de Control</h3>
+		<p>La unidad de control le indica al resto del sistema como llevar a cabo las instrucciones de un programa. Comanda las señales electrónicas entre la memoria y la unidad aritmético-lógica, y entre el CPU y los dispositivos de entrada y salida. Para ejecutar cualquier programa, cada comando del mismo se desglosa en instrucciones.<br>
+Los procesadores utilizan la segmentación de instrucciones para acelerar la ejecución. La segmentación de cauce se puede dividir en ciclo de instrucción en varias etapas separadas que operan secuencialmente, tales como la captación de instrucción, decodificación de instrucción, cálculo de direcciones de operando, ejecución de instrucción y estructura del operando resultado.<br>
+			A continuación se muestra cómo se organiza un procesador, para esto se tiene que considerar los siguientes requisitos:
+<ul><li>Captar instrucciones: el procesador lee una instrucción de memoria (registro, cache o memoria principal).</li>
+<li>Interpretar instrucción: la instrucción se codifica para determinar qué acción es necesario.</li>
+<li>Captar datos: la ejecución de una instrucción puede exigir leer datos de memoria o de un módulo de E/S.</li>
+<li>Procesar datos: la ejecución de una instrucción puede exigir llevar a cabo alguna operación aritmética o lógica con los datos.</li>
+Escribir datos: los resultados de una ejecución pueden exigir escribir datos en la memoria o en el módulo de E/S</ul> <br><br>
+<p>Para hacer estas cosas, el procesador necesita almacenar instrucciones y datos temporalmente mientras una instrucción está ejecutándose, en otras palabras el procesador necesita una pequeña memoria interna, también llamados registros.<br> <br>
+	En esta figura se muestra una visión simplificada de un procesador, que indica su conexión con el resto de sistema, a través del bus del sistema. La ALU lleva a cabo el verdadero cálculo o procesamiento de datos. La unidad de control controla la transferencia de datos e instrucciones así a dentro y así afuera del procesador, y el funcionamiento de la ALU. Además la figura muestra una memoria interna mínima, que consta de un conjunto de posiciones de almacenamiento llamadas registros.
+
+<img  class="alu" src="conexion.png">
+<p>En esta figura se indican los caminos de transferencia de datos y de la lógica de control, que incluye un elemento con el rotulo bus interno del procesador. También se muestran los elementos básicos típicos de la ALU. Hay que observar la similitud entre la estructura interna del computador en su totalidad y la estructura interna del procesador. En ambos casos hay una pequeña colección de elementos principales (computador: procesador, E/S, memoria; procesador: unidad de control, ALU, registros) conectados por caminos de datos.
+	</p>
+<img  class="alu" id="reg" src="caminos.png">
+<h1>Estructura de Registros</h1>
+<h3>¿QUE ES UN REGISTRO?</h3>
+<p>Un registro es una memoria que esta ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, por lo tanto tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo del procesador que se utilice. Los datos  que almacena son los que se usan frecuentemente</p>
+	<h3>Estructura del registro</h3>
+<p>El Registro está organizado en una estructura jerárquica compuesta por subárboles con sus respectivas claves, sub claves y entradas. El contenido del Registro puede variar considerablemente de un equipo a otro, en función de los dispositivos, servicios y programas instalados en cada equipo. Las claves pueden contener sub claves que, a su vez, pueden contener otras sub claves. Aunque la mayor parte de la información del Registro se almacena en disco y se considera permanente, algunos datos almacenados en claves volátiles se sobrescriben cada vez que se inicia el sistema operativo.</p>
+<h3>Registros visibles para el usuario</h3>
+<p>Minimizan el acceso entre el microprocesador y cpu, debido a que se encuentran dentro del CPU, son manipulables por lenguaje de máquina. Aquí tenemos los 2 principales:</p>
+<ul>
+			<li>Registros de Datos. (Manipulables a bajo nivel).</li>
+			<li>Registro de Direcciones (Manipulables a bajo nivel).</li></ul>
+<h3>Registro de índice</h3>
+<p>Sirve para direccionamiento, es similar al “PC”, pero tiene un valor base de autoincremento: Ejemplo: Base 3: 3, 6, 9…n, n+1; que se irá sumando para obtener una dirección más efectiva.</p>
+<h3>Registros de control y de estado</h3>
+<p>Se utilizan para controlar las operaciones del procesador, la mayor parte de estos registros no son visibles al usuario y algunos pueden ser accesibles a las instrucciones de maquina ejecutadas en un modo de control. Los registros utilizados son los siguientes:</p>
+<h3>Ejemplos de organización de registros de CPU reales</h3 	>
+<p>En el diseño de la organización de los registros de control y estado entran en juego varios factores. Una cuestión primordial es el soporte del sistema operativo. Algunos tipos de información de control son de utilidad específica para el sistema operativo. Si el diseñador del procesador posee una comprensión funcional del sistema operativo que se va a utilizar, la organización de los registros puede adaptarse hasta cierto punto a ese sistema operativo. Otra decisión importante en el diseño es la distribución de información de control entre registros y memoria. Es frecuente dedicar los primeros (más bajos) pocos cientos o miles de palabras de memoria para fines de control. El diseñador debe decidir cuánta información de control debiera estar en registros y cuánta en memoria. Se presenta el compromiso habitual entre coste y velocidad.</p><br>
+<img src="registros.png">	
+<h2 id=ciclo>El ciclo de instrucción </h2>
+<p>Un ciclo de instrucción (también llamado ciclo de fetch-and-execute o ciclo de fetch-decode-execute )es el período que tarda la unidad central de proceso (CPU) en ejecutar una instrucción de lenguaje de maquina.
+Comprende una secuencia de acciones determinada que debe llevar a cabo la CPU para ejecutar cada instrucción en un programa. Cada instrucción del Juego de instrucciones de una CPU, puede requerir diferente número de ciclos de instrucción para su ejecución. Un ciclo de instrucción está formado por uno o más ciclos de maquina 
+Para que cualquier sistema de proceso de datos basado en microprocesador (por ejemplo un ordenador) o microcontrolador (por ejemplo un reproductor de MP3) realice una tarea (programa) primero se debe buscar cada instrucción en la memoria principal y luego ejecutarla.</p>
+<h3>Seguimiento de instrucciones </h3>
+<ol>
+<li><h3>Buscar la instrucción en la memoria principal</h3>
+<p>Se vuelca el valor del contador de programa sobre el bus de dirección . Entonces la CPU pasa la instrucción de la memoria principal a través del bus de datos al registro de dirección de memoria MAR). A continuación el valor del MAR es colocado en el registro de instrucción actual  (CIR), un circuito que guarda la instrucción temporalmente de manera que pueda ser decodificada y ejecutada.</p>
+</li>
+<li><h3>Decodificar la instrucción</h3></li>
+<p>El decodificador de instrucción interpreta e implementa la instrucción. El registro de instrucción (IR) mantiene la instrucción en curso mientras el contador de programa (PC, program counter) guarda la direccion de memoria  de la siguiente instrucción a ser ejecutada.
+Recogida de datos desde la memoria principal
+Se accede al banco de registros por los operadores (solo si es necesario)
+Se calcula el valor del operando inmediato con extensión de signo  (solo si es necesario)
+	También se lee la dirección efectiva de la memoria principal si la instrucción tiene una dirección indirecta, y se recogen los datos requeridos de la memoria principal para ser procesados y colocados en los registros de datos.</p>
+	<li><h3>Ejecutar la instrucción</h3></li>
+<p>información como una secuencia de señales de control que son enviadas a las unidades funcionales relevantes de la CPU para realizar la operación requerida por la instrucción poder terminarla y seguir asi.</p>
+	<li><h3>Almacenar o guardar resultados</h3></li></ol>
+<p>El resultado generado por la operación es almacenado en la memoria principal o enviado a un dispositivo de salida dependiendo de la instrucción. Basándose en los resultados de la operación, el contador de programa se incrementa para apuntar a la siguiente instrucción o se actualiza con una dirección diferente donde la próxima instrucción será recogida.</p>
+
+<h2 id="ciclos2">Ciclos ejecutables </h2>
+<p>Los pasos 3 y 4 del ciclo de instrucción se conocen como ciclo de ejecución. Estos pasos cambiarán con cada tipo de instrucción.<br>
+El primer paso del ciclo de ejecución es el proceso de memoria, en que los datos se transfieren entre la CPU y el módulo de E/S. A continuación se produce el proceso de datos, que usa operaciones aritméticas así como lógicas en referencia a los datos. Después tiene lugar el paso de alteraciones centrales, que son una secuencia de operaciones, por ejemplo una operación de salto. El último paso es una operación combinada de todos los otros pasos.</p>
+</div>
+		
+		
+			<div class="menu">
+		<ul>
+					<li  ><a  href="../Arquitectura_De_Computadoras.html">Inicio</a></li>
+			<li><a href="#org">  Organización del procesador	</a></li>
+			<li> <a href="#alu">Unidad Aritmética Lógica</a></li>
+			<li><a href=#reg>Estructura de Registros</a></li>
+			<li><a href="#ciclo">El ciclo de instrucción
+</a></li>
+			<li><a href="#ciclos2">Ciclos ejecutables
+</a></li>
+		
+			</ul>
+				</div>
+			</div>
+	</body>
+
+
+</html>
